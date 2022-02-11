@@ -686,6 +686,10 @@ select {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -726,8 +730,28 @@ select {
   top: 0.25rem;
 }
 
+.-bottom-10 {
+  bottom: -2.5rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
 }
 
 .z-50 {
@@ -810,6 +834,42 @@ select {
   margin-bottom: 0.25rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mb-28 {
+  margin-bottom: 7rem;
+}
+
 .flex {
   display: flex;
 }
@@ -840,6 +900,10 @@ select {
 
 .h-full {
   height: 100%;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-\[calc\(100vh-8rem\)\] {
@@ -890,6 +954,14 @@ select {
   width: 75%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
 .list-disc {
   list-style-type: disc;
 }
@@ -906,12 +978,20 @@ select {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-end {
   align-items: flex-end;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -940,6 +1020,11 @@ select {
 
 .border {
   border-width: 1px;
+}
+
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }
 
 .border-t {
@@ -1048,6 +1133,10 @@ select {
   padding-left: 1rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1099,8 +1188,26 @@ select {
   color: rgb(28 28 28 / var(--tw-text-opacity));
 }
 
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
 .last\:mr-0:last-child {
   margin-right: 0px;
+}
+
+.last\:border-b-0:last-child {
+  border-bottom-width: 0px;
+}
+
+.last\:border-none:last-child {
+  border-style: none;
+}
+
+.last\:border-black-900:last-child {
+  --tw-border-opacity: 1;
+  border-color: rgb(25 25 25 / var(--tw-border-opacity));
 }
 
 .odd\:bg-black-800:nth-child(odd) {

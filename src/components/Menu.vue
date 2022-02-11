@@ -1,7 +1,7 @@
 <template>
     <div class="fixed bottom-0 w-screen bg-black-900 px-2">
         <div class="relative grid h-16 grid-cols-4 items-center border-t border-white">
-            <div class="flex flex-col items-center">
+            <router-link to="/catalog" class="flex flex-col items-center">
                 <svg
                     class="mb-0.5 h-6 w-6"
                     width="15"
@@ -44,8 +44,8 @@
                     />
                 </svg>
                 <span class="text-xs">Каталог</span>
-            </div>
-            <div class="flex flex-col items-center">
+            </router-link>
+            <router-link to="/cart" class="flex flex-col items-center">
                 <svg
                     class="mb-0.5 h-6 w-6"
                     width="17"
@@ -84,8 +84,8 @@
                     />
                 </svg>
                 <span class="text-xs">Корзина</span>
-            </div>
-            <div class="flex flex-col items-center">
+            </router-link>
+            <router-link to="/profile" class="flex flex-col items-center">
                 <svg
                     class="mb-0.5 h-6 w-6"
                     width="13"
@@ -120,8 +120,8 @@
                     />
                 </svg>
                 <span class="text-xs">Отчеты</span>
-            </div>
-            <div class="flex flex-col items-center">
+            </router-link>
+            <router-link to="/profile" class="flex flex-col items-center">
                 <svg
                     class="mb-0.5 h-6 w-6"
                     width="13"
@@ -148,7 +148,7 @@
                     />
                 </svg>
                 <span class="text-xs">Профиль</span>
-            </div>
+            </router-link>
         </div>
     </div>
 </template>
