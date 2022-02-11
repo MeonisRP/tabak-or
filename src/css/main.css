@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Gotham Pro;
   /* 4 */
 }
 
@@ -589,6 +589,46 @@ select {
   outline: 1px auto -webkit-focus-ring-color;
 }
 
+@font-face {
+  font-family: 'Gotham Pro';
+
+  font-weight: 300;
+
+  src: url(../../src/fonts/GothamPro-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+
+  font-weight: 400;
+
+  src: url(../../src/fonts/GothamPro.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+
+  font-weight: 500;
+
+  src: url(../../src/fonts/GothamPro-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+
+  font-weight: 600;
+
+  src: url(../../src/fonts/GothamPro-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+
+  font-weight: 700;
+
+  src: url(../../src/fonts/GothamPro-Black.woff) format('woff');
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -674,6 +714,10 @@ select {
   right: -0.25rem;
 }
 
+.top-16 {
+  top: 4rem;
+}
+
 .right-4 {
   right: 1rem;
 }
@@ -682,16 +726,8 @@ select {
   top: 0.25rem;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-16 {
-  top: 4rem;
+.left-0 {
+  left: 0px;
 }
 
 .z-50 {
@@ -701,6 +737,26 @@ select {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .mb-0\.5 {
@@ -719,8 +775,20 @@ select {
   margin-top: 4rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mb-4 {
@@ -731,32 +799,20 @@ select {
   margin-bottom: 0.75rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .mb-auto {
   margin-bottom: auto;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .flex {
@@ -783,16 +839,52 @@ select {
   height: 1.25rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-\[calc\(100vh-8rem\)\] {
+  height: calc(100vh - 8rem);
+}
+
+.h-\[calc\(100vh-1rem\)\] {
+  height: calc(100vh - 1rem);
+}
+
+.h-\[calc\(100vh-2rem\)\] {
+  height: calc(100vh - 2rem);
+}
+
+.h-\[calc\(100vh-12rem\)\] {
+  height: calc(100vh - 12rem);
+}
+
+.h-\[calc\(100vh-10rem\)\] {
+  height: calc(100vh - 10rem);
 }
 
 .h-4 {
   height: 1rem;
 }
 
-.h-3 {
-  height: 0.75rem;
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-screen {
@@ -815,6 +907,10 @@ select {
   width: 1.25rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .w-3\/12 {
   width: 25%;
 }
@@ -827,12 +923,20 @@ select {
   width: 16.666667%;
 }
 
-.w-4 {
-  width: 1rem;
+.w-1\/3 {
+  width: 33.333333%;
 }
 
-.w-3 {
-  width: 0.75rem;
+.w-3\/4 {
+  width: 75%;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-4 {
@@ -871,12 +975,12 @@ select {
   border-radius: 9999px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border {
@@ -911,6 +1015,11 @@ select {
   border-color: rgb(112 112 114 / var(--tw-border-opacity));
 }
 
+.border-blueish {
+  --tw-border-opacity: 1;
+  border-color: rgb(81 129 184 / var(--tw-border-opacity));
+}
+
 .bg-black-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 25 / var(--tw-bg-opacity));
@@ -926,19 +1035,19 @@ select {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
-.bg-black-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(112 112 114 / var(--tw-bg-opacity));
-}
-
 .bg-black-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(28 28 28 / var(--tw-bg-opacity));
 }
 
-.bg-red-900 {
+.bg-black-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+  background-color: rgb(112 112 114 / var(--tw-bg-opacity));
+}
+
+.bg-black-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 234 237 / var(--tw-bg-opacity));
 }
 
 .object-contain {
@@ -948,6 +1057,10 @@ select {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-2 {
@@ -965,6 +1078,11 @@ select {
   padding-right: 0.25rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -975,9 +1093,17 @@ select {
   padding-right: 0.75rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-xs {
@@ -1011,9 +1137,12 @@ select {
   line-height: 1.25rem;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
 }
 
 .text-black-200 {
@@ -1029,4 +1158,41 @@ select {
 .text-black-700 {
   --tw-text-opacity: 1;
   color: rgb(112 112 114 / var(--tw-text-opacity));
+}
+
+.text-black-800 {
+  --tw-text-opacity: 1;
+  color: rgb(28 28 28 / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.decoration-blueish {
+  -webkit-text-decoration-color: #5181B8;
+          text-decoration-color: #5181B8;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+.last\:mr-0:last-child {
+  margin-right: 0px;
+}
+
+.odd\:bg-black-800:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 28 28 / var(--tw-bg-opacity));
+}
+
+.even\:bg-black-800:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 28 28 / var(--tw-bg-opacity));
 }

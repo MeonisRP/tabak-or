@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
+@layer base {
+    @font-face {
+        font-family: 'Gotham Pro';
+        font-weight: 300;
+        src: url(../../src/fonts/GothamPro-Light.woff) format('woff');
+    }
+    @font-face {
+        font-family: 'Gotham Pro';
+        font-weight: 400;
+        src: url(../../src/fonts/GothamPro.woff) format('woff');
+    }
+    @font-face {
+        font-family: 'Gotham Pro';
+        font-weight: 500;
+        src: url(../../src/fonts/GothamPro-Medium.woff) format('woff');
+    }
+    @font-face {
+        font-family: 'Gotham Pro';
+        font-weight: 600;
+        src: url(../../src/fonts/GothamPro-Bold.woff) format('woff');
+    }
+    @font-face {
+        font-family: 'Gotham Pro';
+        font-weight: 700;
+        src: url(../../src/fonts/GothamPro-Black.woff) format('woff');
+    }
+}
 @tailwind utilities;

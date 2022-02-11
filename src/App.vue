@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="bg-black-900 text-white">
+    <div id="app" class="bg-black-900 text-black-200">
         <Navbar />
         <router-view></router-view>
         <Menu />

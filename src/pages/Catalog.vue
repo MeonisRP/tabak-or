@@ -1,9 +1,9 @@
 <template>
     <div class="relative mt-16 flex flex-col">
-        <div class="bg-black-900 fixed top-16 flex w-full flex-col p-2">
+        <div class="fixed top-16 flex w-full flex-col bg-black-900 p-2">
             <div class="relative mb-2 flex h-8">
-                <input type="search" placeholder="Поиск" class="bg-black-800 border-black-800 w-full rounded-lg" />
-                <div class="bg-black-900 absolute right-4 top-1">
+                <input type="search" placeholder="Поиск" class="w-full rounded-lg border-black-800 bg-black-800" />
+                <div class="absolute right-4 top-1 bg-black-900">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-5 w-5"
@@ -21,19 +21,19 @@
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-2">
-                <button class="bg-black-800 flex items-center justify-center rounded-lg py-1">
+                <button class="flex items-center justify-center rounded-lg bg-black-800 py-1">
                     <img src="../icons/filter.svg" alt="" class="mr-2 h-5 w-5 object-contain" />
                     <span>Фильтр</span>
                 </button>
-                <button class="bg-black-800 flex items-center justify-center rounded-lg py-1">
+                <button class="flex items-center justify-center rounded-lg bg-black-800 py-1">
                     <span>Сортировать</span>
                     <img src="../icons/sort.svg" alt="" class="ml-2 h-3 w-3 object-contain" />
                 </button>
             </div>
         </div>
         <div class="mt-24">
-            <div v-for="product in products" :key="product.id" class="text-black-200 px-2 font-light">
-                <div class="border-black-600 flex justify-between border-b py-2 text-sm">
+            <div v-for="product in products" :key="product.id" class="px-2 font-light">
+                <div class="flex justify-between border-b border-black-600 py-2 text-sm">
                     <div class="mr-2 flex w-3/12">
                         <img :src="product.image" alt="" class="h-full w-full object-contain" />
                     </div>
@@ -44,19 +44,19 @@
                         </div>
                         <div class="grid grid-cols-2 gap-2">
                             <div class="flex flex-col justify-between">
-                                <button class="text-black-700 border-black-700 mb-3 rounded border">Блок</button>
+                                <button class="mb-3 rounded border border-black-700 text-black-700">Блок</button>
                                 <div class="flex justify-between">
-                                    <button @click="product.blocks--" class="bg-black-700 rounded px-3">-</button>
+                                    <button @click="product.blocks--" class="rounded bg-black-700 px-3">-</button>
                                     <span>{{ product.blocks }}</span>
-                                    <button @click="product.blocks++" class="bg-black-700 rounded px-3">+</button>
+                                    <button @click="product.blocks++" class="rounded bg-black-700 px-3">+</button>
                                 </div>
                             </div>
                             <div class="flex flex-col justify-between">
-                                <button class="border-black-700 bg-blueish mb-3 rounded border">Коробка</button>
+                                <button class="mb-3 rounded border border-black-700 bg-blueish">Коробка</button>
                                 <div class="flex justify-between">
-                                    <button @click="product.boxes--" class="bg-blueish rounded px-3">-</button>
+                                    <button @click="product.boxes--" class="rounded bg-blueish px-3">-</button>
                                     <span>{{ product.boxes }}</span>
-                                    <button @click="product.boxes++" class="bg-blueish rounded px-3">+</button>
+                                    <button @click="product.boxes++" class="rounded bg-blueish px-3">+</button>
                                 </div>
                             </div>
                         </div>

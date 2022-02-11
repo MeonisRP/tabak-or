@@ -6,6 +6,9 @@ module.exports = {
             // => @media (max-width: 640px) { ... }
         },
         extend: {
+            fontFamily: {
+                sans: ['Gotham Pro']
+            },
             colors: {
                 black: {
                     100: '#F4F5F9',
