@@ -5,6 +5,7 @@ import Catalog from '../pages/Catalog'
 import Product from '../pages/Product'
 import Cart from '../pages/Cart'
 import CheckoutPreview from '../pages/CheckoutPreview'
+import Checkout from '../pages/Checkout'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const routes = [
         path: '/checkout-preview',
         name: 'CheckoutPreview',
         component: CheckoutPreview
+    },
+    {
+        path: '/checkout',
+        name: 'Checkout',
+        component: Checkout
     }
     // {
     //     path: '/about',
