@@ -109,7 +109,7 @@
                     <span class="text-black-700 text-xs">{{ products.length }} товар(-ов)</span>
                 </div>
                 <router-link
-                    to="/cart"
+                    to="/checkout-preview"
                     class="dark:bg-blueish bg-black-900 flex h-full w-1/2 items-center justify-center px-1 text-white"
                 >
                     Перейти к оформлению

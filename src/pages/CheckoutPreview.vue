@@ -1,45 +1,8 @@
 <template>
     <div class="relative flex flex-col">
-        <div class="dark:bg-black-900 sticky top-16 flex w-full flex-col border-b bg-white py-2">
-            <div class="relative mb-2 flex h-8">
-                <input type="search" placeholder="Поиск" class="border-black-800 dark:bg-black-900 w-full rounded-lg" />
-                <div class="bg-black-800 absolute right-0 top-0 flex h-8 w-16 items-center justify-center rounded-r-lg">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="h-5 w-5 stroke-white"
-                    >
-                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-                <button class="bg-black-800 flex items-center justify-center rounded-lg py-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 15" fill="white" class="mr-2 h-5 w-5">
-                        <path
-                            d="M18.3335 0.333374L17.0835 1.58337L16.6668 2.00004L11.6668 7.00004V14.5L7.50017 13.25L7.50016 7.00004L2.91683 2.41671L2.50017 2.00004L0.833496 0.333374H18.3335Z"
-                        />
-                    </svg>
-                    <span class="text-white">Фильтр</span>
-                </button>
-                <button class="bg-black-800 flex items-center justify-center rounded-lg py-1">
-                    <span class="text-white">Сортировать</span>
-                    <svg
-                        class="ml-2 h-3 w-3"
-                        width="9"
-                        height="12"
-                        viewBox="0 0 9 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path d="M4.5 0L8.39711 4.5H0.602886L4.5 0Z" fill="white" />
-                        <path d="M4.5 12L0.602886 7.5L8.39711 7.5L4.5 12Z" fill="white" />
-                    </svg>
-                </button>
+        <div class="dark:bg-black-900 sticky top-16 flex w-full flex-col bg-white px-2">
+            <div class="flex border-b pb-4 text-lg font-semibold">
+                Ваш баланс: <span class="ml-1 text-green-500">1523 ₽</span>
             </div>
         </div>
         <div class="mt-16 mb-16">
@@ -138,13 +101,27 @@
                     </div>
                 </div>
             </div>
+            <div class="border-black-600 mx-2 mt-4 flex flex-col border-b pb-4">
+                <h2 class="mb-2 text-lg font-semibold">Ваша корзина</h2>
+                <div class="flex justify-between text-sm">
+                    <div>Товары ({{ products.length }})</div>
+                    <span class="font-semibold">2400 ₽</span>
+                </div>
+            </div>
+            <div class="flex h-28 justify-center p-10">
+                <router-link to="/checkout" class="w-3/4">
+                    <button class="dark:bg-blueish bg-black-900 h-full w-full rounded text-white">
+                        Оформить заказ
+                    </button>
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Catalog',
+    name: 'CheckoutPreview',
     data() {
         return {
             products: [
@@ -159,69 +136,6 @@ export default {
                 },
                 {
                     id: 2,
-                    name: 'Жевательный табак Oden’s 10г',
-                    status: 'Доступно',
-                    image: require('../products/1.png'),
-                    price: 400,
-                    blocks: 0,
-                    boxes: 0
-                },
-                {
-                    id: 3,
-                    name: 'Жевательный табак Oden’s 10г',
-                    status: 'Доступно',
-                    image: require('../products/1.png'),
-                    price: 400,
-                    blocks: 0,
-                    boxes: 0
-                },
-                {
-                    id: 4,
-                    name: 'Жевательный табак Oden’s 10г',
-                    status: 'Доступно',
-                    image: require('../products/1.png'),
-                    price: 400,
-                    blocks: 0,
-                    boxes: 0
-                },
-                {
-                    id: 5,
-                    name: 'Жевательный табак Oden’s 10г',
-                    status: 'Доступно',
-                    image: require('../products/1.png'),
-                    price: 400,
-                    blocks: 0,
-                    boxes: 0
-                },
-                {
-                    id: 6,
-                    name: 'Жевательный табак Oden’s 10г',
-                    status: 'Доступно',
-                    image: require('../products/1.png'),
-                    price: 400,
-                    blocks: 0,
-                    boxes: 0
-                },
-                {
-                    id: 7,
-                    name: 'Жевательный табак Oden’s 10г',
-                    status: 'Доступно',
-                    image: require('../products/1.png'),
-                    price: 400,
-                    blocks: 0,
-                    boxes: 0
-                },
-                {
-                    id: 8,
-                    name: 'Жевательный табак Oden’s 10г',
-                    status: 'Доступно',
-                    image: require('../products/1.png'),
-                    price: 400,
-                    blocks: 0,
-                    boxes: 0
-                },
-                {
-                    id: 9,
                     name: 'Жевательный табак Oden’s 10г',
                     status: 'Доступно',
                     image: require('../products/1.png'),

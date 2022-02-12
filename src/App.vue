@@ -1,7 +1,7 @@
 <template>
     <div id="app" class="dark:bg-black-900 dark:text-black-200 container">
         <Navbar />
-        <div class="dark:bg-black-900">
+        <div class="dark:bg-black-900 min-h-screen">
             <router-view></router-view>
         </div>
         <Menu />

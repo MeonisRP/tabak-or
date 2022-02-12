@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-screen flex-col">
+    <div class="flex flex-col">
         <div class="mt-16">
             <div class="relative flex flex-col">
                 <div class="absolute top-0 left-0 w-full">
@@ -176,7 +176,7 @@
                     <p>{{ product.description }}</p>
                 </div>
             </div>
-            <div class="fixed bottom-16 flex w-[calc(100%-1rem)] flex-col">
+            <div class="dark:bg-black-900 fixed bottom-16 flex w-[calc(100%-1rem)] flex-col bg-white">
                 <div class="mb-1 flex h-8 items-center justify-between">
                     <button
                         class="dark:text-black-700 dark:bg-black-900 dark:border-black-700 bg-black-300 border-black-300 mr-1 w-full rounded border px-2 py-1 text-xs text-white"
