@@ -9,6 +9,7 @@ import Checkout from '../pages/Checkout'
 import Profile from '../pages/Profile'
 import ProfileEdit from '../pages/ProfileEdit'
 import OrdersHistory from '../pages/OrdersHistory'
+import Favorite from '../pages/Favorite'
 
 Vue.use(VueRouter)
 
@@ -52,6 +53,11 @@ const routes = [
         path: '/orders-history',
         name: 'OrdersHistory',
         component: OrdersHistory
+    },
+    {
+        path: '/favorite',
+        name: 'Favorite',
+        component: Favorite
     }
     // {
     //     path: '/about',

@@ -85,20 +85,22 @@
                             </svg>
                         </router-link>
                     </li>
-                    <li class="dark:bg-black-800 mb-0.5 flex items-center justify-between bg-[#F4F4F4] p-1">
-                        <span>Избранное</span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 6 12"
-                            width="6"
-                            height="12"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="stroke-black-900 dark:stroke-white"
-                        >
-                            <path d="M0.999999 11L5 6L0.999999 1" />
-                        </svg>
+                    <li class="dark:bg-black-800 mb-0.5 bg-[#F4F4F4] p-1">
+                        <router-link to="/favorite" class="flex items-center justify-between">
+                            <span>Избранное</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 12"
+                                width="6"
+                                height="12"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="stroke-black-900 dark:stroke-white"
+                            >
+                                <path d="M0.999999 11L5 6L0.999999 1" />
+                            </svg>
+                        </router-link>
                     </li>
                     <li class="dark:bg-black-800 mb-0.5 flex items-center justify-between bg-[#F4F4F4] p-1">
                         <span>Купленные товары</span>
