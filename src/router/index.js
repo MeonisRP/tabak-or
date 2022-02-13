@@ -7,6 +7,7 @@ import Cart from '../pages/Cart'
 import CheckoutPreview from '../pages/CheckoutPreview'
 import Checkout from '../pages/Checkout'
 import Profile from '../pages/Profile'
+import ProfileEdit from '../pages/ProfileEdit'
 import OrdersHistory from '../pages/OrdersHistory'
 
 Vue.use(VueRouter)
@@ -41,6 +42,11 @@ const routes = [
         path: '/profile',
         name: 'Profile',
         component: Profile
+    },
+    {
+        path: '/profile-edit',
+        name: 'ProfileEdit',
+        component: ProfileEdit
     },
     {
         path: '/orders-history',
