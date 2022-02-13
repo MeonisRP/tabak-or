@@ -49,35 +49,39 @@
             <div class="dark:border-black-700 mb-2 flex flex-col border-b pb-2">
                 <span class="mb-1 font-medium">Покупки</span>
                 <ul class="flex flex-col">
-                    <li class="dark:bg-black-800 flex items-center justify-between bg-[#F4F4F4] p-1">
-                        <span>Моя корзина</span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 6 12"
-                            width="6"
-                            height="12"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="stroke-black-900 dark:stroke-white"
-                        >
-                            <path d="M0.999999 11L5 6L0.999999 1" />
-                        </svg>
+                    <li class="dark:bg-black-800 bg-[#F4F4F4] p-1">
+                        <router-link to="/cart" class="flex items-center justify-between">
+                            <span>Моя корзина</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 12"
+                                width="6"
+                                height="12"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="stroke-black-900 dark:stroke-white"
+                            >
+                                <path d="M0.999999 11L5 6L0.999999 1" />
+                            </svg>
+                        </router-link>
                     </li>
-                    <li class="dark:bg-black-800 flex items-center justify-between bg-[#F4F4F4] p-1">
-                        <span>История заказов</span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 6 12"
-                            width="6"
-                            height="12"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="stroke-black-900 dark:stroke-white"
-                        >
-                            <path d="M0.999999 11L5 6L0.999999 1" />
-                        </svg>
+                    <li class="dark:bg-black-800 bg-[#F4F4F4] p-1">
+                        <router-link to="/orders-history" class="flex items-center justify-between">
+                            <span>История заказов</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 6 12"
+                                width="6"
+                                height="12"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="stroke-black-900 dark:stroke-white"
+                            >
+                                <path d="M0.999999 11L5 6L0.999999 1" />
+                            </svg>
+                        </router-link>
                     </li>
                     <li class="dark:bg-black-800 flex items-center justify-between bg-[#F4F4F4] p-1">
                         <span>Избранное</span>

@@ -7,6 +7,7 @@ import Cart from '../pages/Cart'
 import CheckoutPreview from '../pages/CheckoutPreview'
 import Checkout from '../pages/Checkout'
 import Profile from '../pages/Profile'
+import OrdersHistory from '../pages/OrdersHistory'
 
 Vue.use(VueRouter)
 
@@ -40,6 +41,11 @@ const routes = [
         path: '/profile',
         name: 'Profile',
         component: Profile
+    },
+    {
+        path: '/orders-history',
+        name: 'OrdersHistory',
+        component: OrdersHistory
     }
     // {
     //     path: '/about',
